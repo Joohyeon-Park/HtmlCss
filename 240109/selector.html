@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         * {
-            color: red;
+            color: brown;
         }
         #desc {
             color: blueviolet;
@@ -23,6 +23,20 @@
         a[target="_blank"] {
             color: green
         }
+        /* p, 
+        #title, 
+        .red {
+            background-color: yellow;
+        } */
+        div p {
+            color: greenyellow;
+        }
+        h1 + h2 {
+            background-color: gray;
+        }
+        h1 ~ h2 {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -30,8 +44,25 @@
     <p id="desc">전체 선택자는 모든 요소를 한 번에 선택할 수 있다.</p>
     <p class="red">class selctor</p>
     <p class="blue">blue class selector</p>
-
+    <hr>
     <a href="#">기본 a 태그</a>
     <a href="#" target="_blank">새창으로 열리는 a 태그</a>
+    <hr>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime vero rerum modi odio laborum culpa sint molestias minima, ipsam incidunt corporis molestiae assumenda obcaecati! Labore voluptatibus natus exercitationem aperiam autem.</p>
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nesciunt odit ea. Repellat minus est adipisci amet, similique, et praesentium sapiente quidem eos perferendis reiciendis quo vel architecto! Neque, inventore!</p>
+            </li>
+            <li>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nulla aliquam, neque ipsa iusto labore amet beatae. Facilis numquam debitis explicabo qui illo quidem, deleniti in, distinctio nam incidunt consequatur?</p>
+            </li>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae labore delectus similique. Quidem error praesentium quis sunt fugiat, nulla placeat nisi neque veritatis, dicta quaerat accusantium officiis dolores voluptatibus. Facere.</p>
+    <hr>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus omnis placeat, quaerat distinctio odio eos cumque totam sapiente cupiditate modi odit? Magnam perspiciatis et necessitatibus sequi dolores sit, perferendis tenetur.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nemo maxime harum a qui? Eos vero delectus placeat maiores eaque quas, voluptates perferendis? Sequi at voluptas modi maxime, harum obcaecati.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora rerum nobis veritatis, cum similique illo quaerat velit. Sapiente quibusdam eius error molestias iusto accusamus officiis est optio amet eum!</h2>
 </body>
 </html>
