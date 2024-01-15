@@ -31,3 +31,46 @@ if(num === strnum) {
 else {
     console.log('not equals');
 }
+
+let obj = {
+    name :"철수",
+    age : 20,
+    sex : "M"
+}
+for(let key in obj){
+    console.log(key + ":" + obj[key]);
+}
+
+let sum = 0;
+for(let i = 0;i<= 100;i++){
+    sum += i;
+}
+console.log(sum);
+
+let cnt = 0;
+for(let i = 1;i<1000;i++){
+    if(i % 2 === 0){
+        cnt++;
+    }
+}
+console.log(cnt);
+
+for(let i=1;i<10;i++){
+    for(let j=1;j<10;j++){
+        console.log(`${i} * ${j} = ${i * j}`);
+    }
+}
+
+for(let i=1;i<10;i++){
+    for(let j=0;j<10;j++){
+        for(let k=0;k<10;k++){
+            let sum = (i * i * i) + (j * j * j) + (k * k * k);
+            let current = (i * 100) + (j * 10) + k;
+            if(sum === current){
+                console.log(current);
+            }
+        }
+    }
+}
+
+
