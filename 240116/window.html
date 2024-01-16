@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printInfo(){
+            console.log(`웹 브라우저의 너비 : ${window.innerWidth}`);
+            console.log(`웹 브라우저의 높이 : ${window.innerHeight}`);
+            console.log(`웹 브라우저의 창의 너비 : ${window.outerWidth}`);
+            console.log(`웹 브라우저의 창의 높이 : ${window.outerHeight}`);
+            console.log(`웹 브라우저의 창 위쪽 / 모니터 간격 : ${window.screenTop}`);
+            console.log(`웹 브라우저의 창 왼쪽 / 모니터 간격 : ${window.screenLeft}`);
+            console.log(`웹 브라우저의 스크롤 가로 위치 : ${window.pageXOffset}`);
+            console.log(`웹 브라우저의 스크롤 세로 위치 : ${window.pageYOffset}`);
+        }
+        function popup(){
+            window.open('http://www.google.co.kr', '팝업', 'width=500, height=300');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="printInfo()">windows 속성</button>
+    <br>
+    <button onclick="popup()">팝업</button>
+</body>
+</html>
