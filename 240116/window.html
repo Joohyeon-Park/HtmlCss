@@ -18,11 +18,41 @@
         function popup(){
             window.open('http://www.google.co.kr', '팝업', 'width=500, height=300');
         }
+        const el = document.getElementById("title");
+        console.log(el);
+
+        const classEl = document.getElementsByClassName('text');
+        console.log(classEl);
+
+        const tagEls = document.getElementsByTagName("p");
+        console.log(tagEls[0]);
+        console.log(tagEls[1]);
+
+        const xel = document.getElementsByClassName("box-1").children;
+        console.log(xel);
+
+        const xxx = document.querySelectorAll(".box-1 .text");
+        console.log(xxx);
     </script>
 </head>
 <body>
     <button onclick="printInfo()">windows 속성</button>
     <br>
     <button onclick="popup()">팝업</button>
+    <br>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>    
+    <hr>
+    <div>
+        <div class="box-1">
+            <p class="text">1</p>
+            <p class="text">2</p>
+        </div>
+        <div class="box-2">
+            <p class="text">3</p>
+            <p class="text">4</p>
+        </div>
+    </div>
 </body>
 </html>
