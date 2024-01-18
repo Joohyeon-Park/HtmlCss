@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ClickEvent()">Click</button>
+    <input type="text" id="text" onfocus="focusEvent()" onblur="blurEvent()">
+    <button id="btn">Click</button>
+    <button id="btn2">Click</button>
+    <button id="quiz">quiz</button>
+    <a href="https://www.naver.co.kr">Naver</a>
+    <a href="https://www.google.co.kr"">google</a>
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+    <script>
+        function ClickEvent(){
+            alert('click');
+        }
+        function focusEvent() {
+            console.log('focus');
+        }
+        function blurEvent() {
+            console.log('blur');
+        }
+        const bEl = document.querySelector("#btn");
+        // bEl.onclick = function() {
+        //     alert('Wow Click');
+        // }
+        bEl.onclick = () => {
+            alert('Wow~~');
+        }
+
+        const cEl = document.querySelector("#btn2");
+        // cEl.addEventListener("click", function() {
+        //     alert('Button Click');
+        // })
+        const clickEvent1 = (event) => {
+            alert('asdf Click');
+        }
+        cEl.addEventListener("click", clickEvent1);
+
+        const qEl = document.querySelector("#quiz");
+        qEl.addEventListener("dblclick", () => {
+            alert('Quiz Alert');
+        })
+        const tEl = document.querySelector("#text");
+        tEl.addEventListener("keydown", (event) => {
+            console.log(event.keycode);
+        })
+
+        const xEl = document.querySelectorAll("a");
+        for(let i=0;i<xEl.length;i++){
+            xEl[i].addEventListener("click", function(e){
+                e.preventDefault();
+            })
+        }
+        const xxEl = document.querySelectorAll("p");
+        xxEl.forEach((el) => {
+            el.addEventListener("click", function(){
+                // if(this.style.color == 'red'){
+                //     this.style.color = 'black';
+                // } else {
+                //     this.style.color = 'red';
+                // }
+                console.log(this);
+            })
+        })
+    </script>
+</body>
+</html>
